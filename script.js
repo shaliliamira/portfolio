@@ -1,7 +1,5 @@
-// JavaScript functionality for mobile menu toggle and dynamic year updating
-
+// Interactive Elements (Mobile Menu & Dynamic Year)
 document.addEventListener('DOMContentLoaded', () => {
-    // Mobile Menu Toggle Functionality
     const menuBtn = document.getElementById('menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
 
@@ -10,20 +8,17 @@ document.addEventListener('DOMContentLoaded', () => {
             mobileMenu.classList.toggle('hidden');
         });
 
-        // Close mobile menu when clicking a link inside it
-        const mobileLinks = mobileMenu.querySelectorAll('a');
-        mobileLinks.forEach(link => {
+        // Close menu on link click
+        mobileMenu.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
                 mobileMenu.classList.add('hidden');
             });
         });
     }
 
-    // Automatically update copyright year
+    // Auto-update footer year
     const yearSpan = document.getElementById('current-year');
     if (yearSpan) {
         yearSpan.textContent = new Date().getFullYear();
     }
-
-    console.log("Portfolio scripts loaded successfully!");
 });
