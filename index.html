@@ -1,130 +1,193 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nur Shalili Amira - IT Portfolio</title>
+    <title>Nur Shalili Amira - IT Undergraduate & Developer Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS File -->
     <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-teal-500 selection:text-white">
 
-    <header>
-        <div class="header-container">
-            <img alt="Nur Shalili Amira" src="profile.jpg" onerror="this.src='https://via.placeholder.com/150'">
-            <div>
-                <h1>NUR SHALILI AMIRA BINTI BADRUL HISHAM</h1>
-                <p>Universiti Teknologi PETRONAS, 32610, Seri Iskandar, Perak</p>
-                <p>nur_22011687@utp.edu.my | <a href="https://www.linkedin.com/in/shalili-amira-90043b3a4" target="_blank">LinkedIn Profile</a></p>
-            </div>
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
+            <span class="font-bold text-lg tracking-tight text-slate-900">Shalili.amira()</span>
+            <nav class="hidden md:flex gap-6 text-sm font-medium text-slate-600">
+                <a href="#about" class="hover:text-teal-600 transition">About</a>
+                <a href="#skills" class="hover:text-teal-600 transition">Skills</a>
+                <a href="#projects" class="hover:text-teal-600 transition">Projects</a>
+                <a href="#experience" class="hover:text-teal-600 transition">Experience</a>
+                <a href="#contact" class="hover:text-teal-600 transition">Contact</a>
+            </nav>
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-slate-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 pt-2 border-b border-slate-200 bg-white">
+            <a href="#about" class="block py-2 text-sm text-slate-600 hover:text-teal-600">About</a>
+            <a href="#skills" class="block py-2 text-sm text-slate-600 hover:text-teal-600">Skills</a>
+            <a href="#projects" class="block py-2 text-sm text-slate-600 hover:text-teal-600">Projects</a>
+            <a href="#experience" class="block py-2 text-sm text-slate-600 hover:text-teal-600">Experience</a>
+            <a href="#contact" class="block py-2 text-sm text-slate-600 hover:text-teal-600">Contact</a>
         </div>
     </header>
 
-    <nav>
-        <a href="#about">Objective</a>
-        <a href="#education">Education</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#leadership">Leadership</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-    </nav>
+    <!-- Hero Section -->
+    <section class="max-w-4xl mx-auto px-6 py-20 md:py-28 flex flex-col items-start fade-in">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-50 border border-teal-200 text-teal-700 text-xs font-semibold mb-6">
+            <span class="w-2 h-2 rounded-full bg-teal-500 animate-pulse"></span> Open for Internship (Sept 2026 – Apr 2027)
+        </div>
+        <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight mb-4">
+            Nur Shalili Amira
+        </h1>
+        <p class="text-xl md:text-2xl font-medium text-teal-600 mb-6">
+            Information Technology Undergraduate & Software Developer
+        </p>
+        <p class="text-slate-600 text-lg leading-relaxed max-w-2xl mb-8">
+            Building robust software solutions, exploring data science, and implementing secure network architectures. Passionate about turning complex logic into efficient, user-centric applications.
+        </p>
+        <div class="flex flex-wrap gap-4">
+            <a href="#projects" class="px-6 py-3 bg-slate-900 text-white font-medium rounded-xl hover:bg-slate-800 transition shadow-sm">
+                Explore Projects
+            </a>
+            <a href="#contact" class="px-6 py-3 bg-white border border-slate-300 text-slate-700 font-medium rounded-xl hover:bg-slate-50 transition shadow-sm">
+                Get in Touch
+            </a>
+        </div>
+    </section>
 
-    <div class="main-content">
-        
-        <!-- Career Objective -->
-        <section id="about">
-            <h2>Career Objective</h2>
-            <p>I am a motivated Information Technology student at Universiti Teknologi PETRONAS with a strong foundation in data analysis, software development, and application building. I am looking for an internship placement from <strong>7 September 2026 to 9 April 2027</strong>. My goal is to apply my technical and problem-solving skills to provide high-quality digital solutions in a professional environment.</p>
-        </section>
+    <!-- About Section -->
+    <section id="about" class="max-w-4xl mx-auto px-6 py-12 border-t border-slate-200">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4">About Me</h2>
+        <p class="text-slate-600 leading-relaxed mb-4">
+            I am an IT undergraduate student at Universiti Teknologi PETRONAS (UTP) pursuing a Bachelor of Information Technology with a minor in Corporate Management. My academic journey focuses heavily on software engineering, data analytics, and networking infrastructure.
+        </p>
+        <p class="text-slate-600 leading-relaxed">
+            Beyond coding, I actively participate in leadership roles, such as serving as the Head of Public Relations & Sponsorship for major university programs, combining my technical acumen with strong communication and management skills.
+        </p>
+    </section>
 
-        <!-- Education -->
-        <section id="education">
-            <h2>Education</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <span class="badge">Current</span>
-                    <h3>Bachelor in Information Technology (Hons)</h3>
-                    <p>Universiti Teknologi PETRONAS, Seri Iskandar, Perak</p>
-                    <ul>
-                        <li>Dean's List for consecutive semesters</li>
-                    </ul>
+    <!-- Skills Section -->
+    <section id="skills" class="max-w-4xl mx-auto px-6 py-12 border-t border-slate-200">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6">Technical Skills</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="p-6 bg-white rounded-2xl border border-slate-200 shadow-sm card-hover">
+                <h3 class="font-semibold text-slate-900 mb-3 text-lg">Programming Languages</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-sm font-medium">Python</span>
+                    <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-sm font-medium">C++</span>
+                    <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-sm font-medium">C#</span>
+                    <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-sm font-medium">PHP</span>
+                    <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-sm font-medium">JavaScript</span>
+                    <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-sm font-medium">R</span>
                 </div>
             </div>
-        </section>
+            <div class="p-6 bg-white rounded-2xl border border-slate-200 shadow-sm card-hover">
+                <h3 class="font-semibold text-slate-900 mb-3 text-lg">Tools, Databases & Networks</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-sm font-medium">MySQL</span>
+                    <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-sm font-medium">Figma</span>
+                    <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-sm font-medium">Cisco Packet Tracer</span>
+                    <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-sm font-medium">Huawei eNSP</span>
+                    <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-sm font-medium">Git / GitHub</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!-- Projects -->
-        <section id="projects">
-            <h2>Featured Projects</h2>
+    <!-- Projects Section -->
+    <section id="projects" class="max-w-4xl mx-auto px-6 py-12 border-t border-slate-200">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6">Featured Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             
-            <div class="project-card">
-                <h3>PowerWise — Smart Electricity Usage Prediction</h3>
-                <p><strong>Technologies:</strong> React Native, Firebase, Python, Machine Learning</p>
-                <p>An AI-based mobile application designed to help users monitor, predict, and optimize electricity consumption through personalized recommendations and automated usage analysis.</p>
-            </div>
-
-            <div class="project-card">
-                <h3>Real-Time Aircraft Monitoring Platform</h3>
-                <p><strong>Technologies:</strong> Python, Flask, Flask-SocketIO, Leaflet.js, OpenSky Network API</p>
-                <p>Developed a real-time flight telemetry tracking and geospatial visualization dashboard over Perak, Malaysia, processing continuous data streams.</p>
-            </div>
-
-            <div class="project-card">
-                <h3>ReadCycle — Bookstore Web Application</h3>
-                <p><strong>Technologies:</strong> HTML, CSS, JavaScript, PHP, MySQL</p>
-                <p>Built a web platform to connect book buyers and sellers, featuring user authentication, book listings, and structured database management.</p>
-            </div>
-        </section>
-
-        <!-- Experience -->
-        <section id="experience">
-            <h2>Working Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <span class="badge">Mar 2023 - Aug 2023</span>
-                    <h3>Parcel Store Assistant</h3>
-                    <p>Mail Boxes Etc, Bandar Baru, Teluk Intan</p>
-                    <ul>
-                        <li>Managed sorting, scanning, and logistics operations for local and international parcels while tracking shipment entries for e-commerce platforms.</li>
-                    </ul>
+            <div class="p-6 bg-white rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between card-hover">
+                <div>
+                    <h3 class="font-bold text-lg text-slate-900 mb-2">Real-Time Aircraft Monitoring Platform</h3>
+                    <p class="text-slate-600 text-sm mb-4">
+                        Developed an IoT data collection and geospatial analytics system retrieving flight telemetry via OpenSky Network API over a 7-day period.
+                    </p>
+                </div>
+                <div class="flex gap-2 text-xs font-semibold text-teal-600">
+                    <span>Python (Flask)</span> • <span>Leaflet.js</span> • <span>API Integration</span>
                 </div>
             </div>
-        </section>
 
-        <!-- Leadership -->
-        <section id="leadership">
-            <h2>Extracurricular Activities & Leadership</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <span class="badge">Jan 2026</span>
-                    <h3>Assistant Head of Public Relations and Sponsorship</h3>
-                    <p>D.R.O.N.E Program, Hilir Perak</p>
-                    <ul>
-                        <li>Secured significant corporate/program sponsorships and coordinated stakeholder communication for regional STEM initiatives.</li>
-                    </ul>
+            <div class="p-6 bg-white rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between card-hover">
+                <div>
+                    <h3 class="font-bold text-lg text-slate-900 mb-2">ReadCycle Bookstore System</h3>
+                    <p class="text-slate-600 text-sm mb-4">
+                        Built a full-stack platform connecting book buyers and sellers, incorporating user authentication, listing management, and relational database records.
+                    </p>
+                </div>
+                <div class="flex gap-2 text-xs font-semibold text-teal-600">
+                    <span>PHP</span> • <span>MySQL</span> • <span>JavaScript</span>
                 </div>
             </div>
-        </section>
 
-        <!-- Skills -->
-        <section id="skills">
-            <h2>Technical Skills</h2>
-            <ul class="skills-list">
-                <li><strong>Programming:</strong> Python, C++, C#, PHP, JavaScript, R</li>
-                <li><strong>Databases & Analytics:</strong> MySQL, phpMyAdmin, Microsoft Excel, Power BI</li>
-                <li><strong>Web & Mobile:</strong> React Native, HTML, CSS, Figma</li>
-                <li><strong>Networking & Security:</strong> Wireshark, Cisco Packet Tracer, Huawei eNSP</li>
-            </ul>
-        </section>
+        </div>
+    </section>
 
-        <!-- Contact Section -->
-        <section id="contact">
-            <h2>Let's Connect</h2>
-            <p>Thank you for exploring my portfolio. Feel free to reach out for internship opportunities!</p>
-            <p><strong>Email:</strong> nur_22011687@utp.edu.my</p>
-            <p><strong>Internship Availability:</strong> 7 September 2026 – 9 April 2027</p>
-        </section>
+    <!-- Experience Section -->
+    <section id="experience" class="max-w-4xl mx-auto px-6 py-12 border-t border-slate-200">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6">Experience & Leadership</h2>
+        <div class="space-y-6">
+            <div class="p-6 bg-white rounded-2xl border border-slate-200 shadow-sm card-hover">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-2">
+                    <h3 class="font-bold text-slate-900 text-lg">Head of PR & Sponsorship</h3>
+                    <span class="text-sm text-teal-600 font-medium">June 2025 – April 2026</span>
+                </div>
+                <p class="text-sm font-medium text-slate-700 mb-2">D.R.O.N.E Program, Hilir Perak</p>
+                <p class="text-slate-600 text-sm">
+                    Secured RM2,000 in corporate funding through pitching to external brands and coordinated stakeholder partnerships successfully.
+                </p>
+            </div>
 
-    </div>
+            <div class="p-6 bg-white rounded-2xl border border-slate-200 shadow-sm card-hover">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-2">
+                    <h3 class="font-bold text-slate-900 text-lg">Parcel Store Assistant</h3>
+                    <span class="text-sm text-teal-600 font-medium">Mar 2023 – Aug 2023</span>
+                </div>
+                <p class="text-sm font-medium text-slate-700 mb-2">Mail Boxes Etc, Teluk Intan</p>
+                <p class="text-slate-600 text-sm">
+                    Managed data entry, tracking logistics, and processing e-commerce shipments with high accuracy and operational efficiency.
+                </p>
+            </div>
+        </div>
+    </section>
 
+    <!-- Contact Section -->
+    <section id="contact" class="max-w-4xl mx-auto px-6 py-12 border-t border-slate-200 mb-20">
+        <div class="p-8 bg-slate-900 text-white rounded-3xl flex flex-col items-center text-center shadow-lg">
+            <h2 class="text-3xl font-bold mb-3">Let's Connect</h2>
+            <p class="text-slate-300 max-w-md mb-6 text-sm">
+                I am actively looking for internship opportunities starting September 2026. Feel free to reach out via email or LinkedIn!
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="mailto:nur_22011687@utp.edu.my" class="px-6 py-3 bg-teal-500 text-white font-medium rounded-xl hover:bg-teal-400 transition text-sm">
+                    Email Me
+                </a>
+                <a href="https://www.linkedin.com/in/shalili-amira-90043b3a4" target="_blank" class="px-6 py-3 bg-slate-800 text-white border border-slate-700 font-medium rounded-xl hover:bg-slate-700 transition text-sm">
+                    LinkedIn Profile
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="max-w-4xl mx-auto px-6 py-8 border-t border-slate-200 text-center text-sm text-slate-500">
+        <p>© <span id="current-year">2026</span> Nur Shalili Amira. Built with Tailwind CSS & Hosted on GitHub Pages.</p>
+    </footer>
+
+    <!-- Custom JS File -->
+    <script src="script.js"></script>
 </body>
 </html>
