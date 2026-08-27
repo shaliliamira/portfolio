@@ -3,133 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nur Shalili Amira - IT Undergraduate & Developer Portfolio</title>
-    <!-- Tailwind CSS CDN -->
+    <title>Nur Shalili Amira - Portfolio & Developer Profile</title>
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Custom CSS File -->
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts -->
+    <!-- Google Fonts & FontAwesome for Icons -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased selection:bg-teal-500 selection:text-white">
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-teal-500 selection:text-white">
 
     <!-- Header / Navigation -->
-    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
-        <div class="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
-            <span class="font-bold text-lg tracking-tight text-slate-900">Shalili.amira()</span>
-            <nav class="hidden md:flex gap-6 text-sm font-medium text-slate-600">
-                <a href="#about" class="hover:text-teal-600 transition">About</a>
-                <a href="#skills" class="hover:text-teal-600 transition">Skills</a>
-                <a href="#projects" class="hover:text-teal-600 transition">Projects</a>
-                <a href="#experience" class="hover:text-teal-600 transition">Experience</a>
-                <a href="#contact" class="hover:text-teal-600 transition">Contact</a>
+    <header class="sticky top-0 z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="font-bold text-lg tracking-tight text-white flex items-center gap-2">
+                <span class="w-3 h-3 rounded-full bg-teal-500 animate-pulse"></span> Shalili.amira
+            </a>
+            <nav class="hidden md:flex gap-6 text-sm font-medium text-slate-400">
+                <a href="#about" class="hover:text-teal-400 transition">About</a>
+                <a href="#skills" class="hover:text-teal-400 transition">Skills</a>
+                <a href="#projects" class="hover:text-teal-400 transition">Projects</a>
+                <a href="#experience" class="hover:text-teal-400 transition">Experience</a>
+                <a href="#contact" class="hover:text-teal-400 transition">Contact</a>
             </nav>
-            <!-- Mobile Menu Button -->
-            <button id="menu-btn" class="md:hidden text-slate-700 focus:outline-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
+            <button id="menu-btn" class="md:hidden text-slate-300 focus:outline-none">
+                <i class="fa-solid fa-bars text-xl"></i>
             </button>
         </div>
-        <!-- Mobile Menu Dropdown -->
-        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 pt-2 border-b border-slate-200 bg-white">
-            <a href="#about" class="block py-2 text-sm text-slate-600 hover:text-teal-600">About</a>
-            <a href="#skills" class="block py-2 text-sm text-slate-600 hover:text-teal-600">Skills</a>
-            <a href="#projects" class="block py-2 text-sm text-slate-600 hover:text-teal-600">Projects</a>
-            <a href="#experience" class="block py-2 text-sm text-slate-600 hover:text-teal-600">Experience</a>
-            <a href="#contact" class="block py-2 text-sm text-slate-600 hover:text-teal-600">Contact</a>
+        <!-- Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 pt-2 border-b border-slate-800 bg-slate-900">
+            <a href="#about" class="block py-2 text-sm text-slate-300 hover:text-teal-400">About</a>
+            <a href="#skills" class="block py-2 text-sm text-slate-300 hover:text-teal-400">Skills</a>
+            <a href="#projects" class="block py-2 text-sm text-slate-300 hover:text-teal-400">Projects</a>
+            <a href="#experience" class="block py-2 text-sm text-slate-300 hover:text-teal-400">Experience</a>
+            <a href="#contact" class="block py-2 text-sm text-slate-300 hover:text-teal-400">Contact</a>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="max-w-4xl mx-auto px-6 py-20 md:py-28 flex flex-col items-start fade-in">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-50 border border-teal-200 text-teal-700 text-xs font-semibold mb-6">
-            <span class="w-2 h-2 rounded-full bg-teal-500 animate-pulse"></span> Open for Internship (Sept 2026 – Apr 2027)
+    <!-- Hero Section with Avatar Photo & Bio -->
+    <section class="max-w-5xl mx-auto px-6 py-16 md:py-24 flex flex-col-reverse md:flex-row items-center justify-between gap-12">
+        <div class="flex-1 space-y-6 text-center md:text-left">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-500/10 border border-teal-500/20 text-teal-400 text-xs font-semibold">
+                <i class="fa-solid fa-briefcase"></i> Open for Internship (Sept 2026 – Apr 2027)
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white">
+                Hi, I'm <span class="text-teal-400">Shalili Amira</span>
+            </h1>
+            <p class="text-lg md:text-xl font-medium text-slate-300">
+                IT Undergraduate & Software Developer
+            </p>
+            <p class="text-slate-400 text-base leading-relaxed">
+                Passionate about developing clean web systems, data science solutions, and robust network infrastructures. Currently studying at Universiti Teknologi PETRONAS (UTP).
+            </p>
+            <div class="flex flex-wrap justify-center md:justify-start gap-4 pt-2">
+                <a href="#projects" class="px-6 py-3 bg-teal-500 text-slate-950 font-semibold rounded-xl hover:bg-teal-400 transition shadow-lg shadow-teal-500/20">
+                    View Projects
+                </a>
+                <a href="#contact" class="px-6 py-3 bg-slate-900 border border-slate-800 text-slate-200 font-semibold rounded-xl hover:bg-slate-800 transition">
+                    Contact Me
+                </a>
+            </div>
         </div>
-        <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight mb-4">
-            Nur Shalili Amira
-        </h1>
-        <p class="text-xl md:text-2xl font-medium text-teal-600 mb-6">
-            Information Technology Undergraduate & Software Developer
-        </p>
-        <p class="text-slate-600 text-lg leading-relaxed max-w-2xl mb-8">
-            Building robust software solutions, exploring data science, and implementing secure network architectures. Passionate about turning complex logic into efficient, user-centric applications.
-        </p>
-        <div class="flex flex-wrap gap-4">
-            <a href="#projects" class="px-6 py-3 bg-slate-900 text-white font-medium rounded-xl hover:bg-slate-800 transition shadow-sm">
-                Explore Projects
-            </a>
-            <a href="#contact" class="px-6 py-3 bg-white border border-slate-300 text-slate-700 font-medium rounded-xl hover:bg-slate-50 transition shadow-sm">
-                Get in Touch
-            </a>
+        <!-- Profile Picture Box -->
+        <div class="relative w-48 h-48 md:w-64 md:h-64 rounded-3xl overflow-hidden border-2 border-teal-500/30 shadow-2xl bg-slate-900 flex items-center justify-center group">
+            <!-- Letak URL gambar profil anda di bahagian src bawah ini -->
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500&auto=format&fit=crop&q=60" alt="Nur Shalili Amira" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent"></div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="max-w-4xl mx-auto px-6 py-12 border-t border-slate-200">
-        <h2 class="text-2xl font-bold text-slate-900 mb-4">About Me</h2>
-        <p class="text-slate-600 leading-relaxed mb-4">
-            I am an IT undergraduate student at Universiti Teknologi PETRONAS (UTP) pursuing a Bachelor of Information Technology with a minor in Corporate Management. My academic journey focuses heavily on software engineering, data analytics, and networking infrastructure.
-        </p>
-        <p class="text-slate-600 leading-relaxed">
-            Beyond coding, I actively participate in leadership roles, such as serving as the Head of Public Relations & Sponsorship for major university programs, combining my technical acumen with strong communication and management skills.
-        </p>
+    <section id="about" class="max-w-5xl mx-auto px-6 py-16 border-t border-slate-900">
+        <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+            <i class="fa-solid fa-user text-teal-400"></i> About Me
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-slate-400 text-sm leading-relaxed">
+            <div class="p-6 bg-slate-900/50 border border-slate-800 rounded-2xl">
+                <h3 class="font-semibold text-white text-base mb-2">Education</h3>
+                <p>Bachelor of Information Technology (Hons) with a Minor in Corporate Management at Universiti Teknologi PETRONAS (UTP). Current CGPA: 3.40.</p>
+            </div>
+            <div class="p-6 bg-slate-900/50 border border-slate-800 rounded-2xl">
+                <h3 class="font-semibold text-white text-base mb-2">Focus Areas</h3>
+                <p>Full-stack web systems, data science analytics using R and Python, hardware integration, and secure networking topologies (Cisco & Huawei).</p>
+            </div>
+            <div class="p-6 bg-slate-900/50 border border-slate-800 rounded-2xl">
+                <h3 class="font-semibold text-white text-base mb-2">Leadership</h3>
+                <p>Active co-curricular contributor, serving as Head of Public Relations & Sponsorship for large-scale events like D.R.O.N.E 2.0.</p>
+            </div>
+        </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="max-w-4xl mx-auto px-6 py-12 border-t border-slate-200">
-        <h2 class="text-2xl font-bold text-slate-900 mb-6">Technical Skills</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div class="p-6 bg-white rounded-2xl border border-slate-200 shadow-sm card-hover">
-                <h3 class="font-semibold text-slate-900 mb-3 text-lg">Programming Languages</h3>
+    <section id="skills" class="max-w-5xl mx-auto px-6 py-16 border-t border-slate-900">
+        <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+            <i class="fa-solid fa-code text-teal-400"></i> Technical Expertise
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="p-5 bg-slate-900/60 border border-slate-800 rounded-xl">
+                <h3 class="font-semibold text-white mb-3">Programming</h3>
                 <div class="flex flex-wrap gap-2">
-                    <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-sm font-medium">Python</span>
-                    <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-sm font-medium">C++</span>
-                    <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-sm font-medium">C#</span>
-                    <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-sm font-medium">PHP</span>
-                    <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-sm font-medium">JavaScript</span>
-                    <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-sm font-medium">R</span>
+                    <span class="px-2.5 py-1 bg-slate-800 text-slate-300 rounded-md text-xs">Python</span>
+                    <span class="px-2.5 py-1 bg-slate-800 text-slate-300 rounded-md text-xs">C++</span>
+                    <span class="px-2.5 py-1 bg-slate-800 text-slate-300 rounded-md text-xs">PHP</span>
+                    <span class="px-2.5 py-1 bg-slate-800 text-slate-300 rounded-md text-xs">JavaScript</span>
+                    <span class="px-2.5 py-1 bg-slate-800 text-slate-300 rounded-md text-xs">R</span>
                 </div>
             </div>
-            <div class="p-6 bg-white rounded-2xl border border-slate-200 shadow-sm card-hover">
-                <h3 class="font-semibold text-slate-900 mb-3 text-lg">Tools, Databases & Networks</h3>
+            <div class="p-5 bg-slate-900/60 border border-slate-800 rounded-xl">
+                <h3 class="font-semibold text-white mb-3">Databases & Tools</h3>
                 <div class="flex flex-wrap gap-2">
-                    <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-sm font-medium">MySQL</span>
-                    <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-sm font-medium">Figma</span>
-                    <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-sm font-medium">Cisco Packet Tracer</span>
-                    <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-sm font-medium">Huawei eNSP</span>
-                    <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-sm font-medium">Git / GitHub</span>
+                    <span class="px-2.5 py-1 bg-slate-800 text-slate-300 rounded-md text-xs">MySQL</span>
+                    <span class="px-2.5 py-1 bg-slate-800 text-slate-300 rounded-md text-xs">Figma</span>
+                    <span class="px-2.5 py-1 bg-slate-800 text-slate-300 rounded-md text-xs">Git / GitHub</span>
+                    <span class="px-2.5 py-1 bg-slate-800 text-slate-300 rounded-md text-xs">Power BI</span>
+                </div>
+            </div>
+            <div class="p-5 bg-slate-900/60 border border-slate-800 rounded-xl">
+                <h3 class="font-semibold text-white mb-3">Networking</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-2.5 py-1 bg-slate-800 text-slate-300 rounded-md text-xs">Cisco Packet Tracer</span>
+                    <span class="px-2.5 py-1 bg-slate-800 text-slate-300 rounded-md text-xs">Huawei eNSP</span>
+                    <span class="px-2.5 py-1 bg-slate-800 text-slate-300 rounded-md text-xs">Wireshark</span>
+                </div>
+            </div>
+            <div class="p-5 bg-slate-900/60 border border-slate-800 rounded-xl">
+                <h3 class="font-semibold text-white mb-3">Soft Skills</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-2.5 py-1 bg-slate-800 text-slate-300 rounded-md text-xs">Public Relations</span>
+                    <span class="px-2.5 py-1 bg-slate-800 text-slate-300 rounded-md text-xs">Event Planning</span>
+                    <span class="px-2.5 py-1 bg-slate-800 text-slate-300 rounded-md text-xs">Team Leadership</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="max-w-4xl mx-auto px-6 py-12 border-t border-slate-200">
-        <h2 class="text-2xl font-bold text-slate-900 mb-6">Featured Projects</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <!-- Projects Section with Image Mockups -->
+    <section id="projects" class="max-w-5xl mx-auto px-6 py-16 border-t border-slate-900">
+        <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+            <i class="fa-solid fa-laptop-code text-teal-400"></i> Featured Projects
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             
-            <div class="p-6 bg-white rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between card-hover">
-                <div>
-                    <h3 class="font-bold text-lg text-slate-900 mb-2">Real-Time Aircraft Monitoring Platform</h3>
-                    <p class="text-slate-600 text-sm mb-4">
-                        Developed an IoT data collection and geospatial analytics system retrieving flight telemetry via OpenSky Network API over a 7-day period.
-                    </p>
+            <!-- Project 1 -->
+            <div class="bg-slate-900/60 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between group">
+                <div class="h-48 overflow-hidden bg-slate-800 relative">
+                    <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=600&auto=format&fit=crop&q=60" alt="Aircraft Monitoring" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-80">
+                    <div class="absolute top-3 right-3 px-3 py-1 bg-slate-950/80 rounded-full text-xs font-semibold text-teal-400 border border-slate-800">IoT System</div>
                 </div>
-                <div class="flex gap-2 text-xs font-semibold text-teal-600">
-                    <span>Python (Flask)</span> • <span>Leaflet.js</span> • <span>API Integration</span>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-lg font-bold text-white mb-2">Real-Time Aircraft Monitoring Platform</h3>
+                        <p class="text-slate-400 text-sm mb-4">
+                            Developed an IoT flight tracking system retrieving live aviation telemetry using OpenSky Network API and Leaflet.js mapping over a 7-day run.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 text-xs font-medium text-teal-400 pt-4 border-t border-slate-800/60">
+                        <span>Python (Flask)</span> • <span>Leaflet.js</span> • <span>REST API</span>
+                    </div>
                 </div>
             </div>
 
-            <div class="p-6 bg-white rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between card-hover">
-                <div>
-                    <h3 class="font-bold text-lg text-slate-900 mb-2">ReadCycle Bookstore System</h3>
-                    <p class="text-slate-600 text-sm mb-4">
-                        Built a full-stack platform connecting book buyers and sellers, incorporating user authentication, listing management, and relational database records.
-                    </p>
+            <!-- Project 2 -->
+            <div class="bg-slate-900/60 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between group">
+                <div class="h-48 overflow-hidden bg-slate-800 relative">
+                    <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=600&auto=format&fit=crop&q=60" alt="ReadCycle Bookstore" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-80">
+                    <div class="absolute top-3 right-3 px-3 py-1 bg-slate-950/80 rounded-full text-xs font-semibold text-teal-400 border border-slate-800">Web App</div>
                 </div>
-                <div class="flex gap-2 text-xs font-semibold text-teal-600">
-                    <span>PHP</span> • <span>MySQL</span> • <span>JavaScript</span>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-lg font-bold text-white mb-2">ReadCycle Bookstore System</h3>
+                        <p class="text-slate-400 text-sm mb-4">
+                            Built a full-stack platform enabling users to buy and sell pre-loved books, with user authentication and database management.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 text-xs font-medium text-teal-400 pt-4 border-t border-slate-800/60">
+                        <span>PHP</span> • <span>MySQL</span> • <span>JavaScript</span>
+                    </div>
                 </div>
             </div>
 
@@ -137,57 +187,59 @@
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="max-w-4xl mx-auto px-6 py-12 border-t border-slate-200">
-        <h2 class="text-2xl font-bold text-slate-900 mb-6">Experience & Leadership</h2>
+    <section id="experience" class="max-w-5xl mx-auto px-6 py-16 border-t border-slate-900">
+        <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+            <i class="fa-solid fa-timeline text-teal-400"></i> Experience & Leadership
+        </h2>
         <div class="space-y-6">
-            <div class="p-6 bg-white rounded-2xl border border-slate-200 shadow-sm card-hover">
+            <div class="p-6 bg-slate-900/60 border border-slate-800 rounded-2xl">
                 <div class="flex flex-col md:flex-row md:items-center justify-between mb-2">
-                    <h3 class="font-bold text-slate-900 text-lg">Head of PR & Sponsorship</h3>
-                    <span class="text-sm text-teal-600 font-medium">June 2025 – April 2026</span>
+                    <h3 class="font-bold text-white text-base">Head of PR & Sponsorship Department</h3>
+                    <span class="text-xs text-teal-400 font-semibold bg-teal-500/10 px-3 py-1 rounded-full border border-teal-500/20">June 2025 – Apr 2026</span>
                 </div>
-                <p class="text-sm font-medium text-slate-700 mb-2">D.R.O.N.E Program, Hilir Perak</p>
-                <p class="text-slate-600 text-sm">
-                    Secured RM2,000 in corporate funding through pitching to external brands and coordinated stakeholder partnerships successfully.
+                <p class="text-sm font-medium text-slate-300 mb-2">D.R.O.N.E 2.0 Program, Hilir Perak</p>
+                <p class="text-slate-400 text-sm">
+                    Successfully secured RM2,000 in funding through brand pitches and managed relations with public corporate partners.
                 </p>
             </div>
 
-            <div class="p-6 bg-white rounded-2xl border border-slate-200 shadow-sm card-hover">
+            <div class="p-6 bg-slate-900/60 border border-slate-800 rounded-2xl">
                 <div class="flex flex-col md:flex-row md:items-center justify-between mb-2">
-                    <h3 class="font-bold text-slate-900 text-lg">Parcel Store Assistant</h3>
-                    <span class="text-sm text-teal-600 font-medium">Mar 2023 – Aug 2023</span>
+                    <h3 class="font-bold text-white text-base">Parcel Store Assistant (Part-Time)</h3>
+                    <span class="text-xs text-teal-400 font-semibold bg-teal-500/10 px-3 py-1 rounded-full border border-teal-500/20">Mar 2023 – Aug 2023</span>
                 </div>
-                <p class="text-sm font-medium text-slate-700 mb-2">Mail Boxes Etc, Teluk Intan</p>
-                <p class="text-slate-600 text-sm">
-                    Managed data entry, tracking logistics, and processing e-commerce shipments with high accuracy and operational efficiency.
+                <p class="text-sm font-medium text-slate-300 mb-2">Mail Boxes Etc, Teluk Intan</p>
+                <p class="text-slate-400 text-sm">
+                    Handled shipment tracking, data entry, sorting local and international logistics items with strict precision.
                 </p>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="max-w-4xl mx-auto px-6 py-12 border-t border-slate-200 mb-20">
-        <div class="p-8 bg-slate-900 text-white rounded-3xl flex flex-col items-center text-center shadow-lg">
-            <h2 class="text-3xl font-bold mb-3">Let's Connect</h2>
-            <p class="text-slate-300 max-w-md mb-6 text-sm">
-                I am actively looking for internship opportunities starting September 2026. Feel free to reach out via email or LinkedIn!
+    <section id="contact" class="max-w-5xl mx-auto px-6 py-16 border-t border-slate-900 mb-12">
+        <div class="p-8 md:p-12 bg-gradient-to-b from-slate-900 to-slate-950 border border-slate-800 rounded-3xl text-center shadow-xl">
+            <h2 class="text-3xl font-bold text-white mb-3">Let's Build Something Together</h2>
+            <p class="text-slate-400 max-w-md mx-auto mb-8 text-sm">
+                I am actively seeking an internship role starting September 2026. Reach out via email or connect on LinkedIn.
             </p>
             <div class="flex flex-wrap justify-center gap-4">
-                <a href="mailto:nur_22011687@utp.edu.my" class="px-6 py-3 bg-teal-500 text-white font-medium rounded-xl hover:bg-teal-400 transition text-sm">
-                    Email Me
+                <a href="mailto:nur_22011687@utp.edu.my" class="px-6 py-3 bg-teal-500 text-slate-950 font-semibold rounded-xl hover:bg-teal-400 transition text-sm flex items-center gap-2">
+                    <i class="fa-solid fa-envelope"></i> nur_22011687@utp.edu.my
                 </a>
-                <a href="https://www.linkedin.com/in/shalili-amira-90043b3a4" target="_blank" class="px-6 py-3 bg-slate-800 text-white border border-slate-700 font-medium rounded-xl hover:bg-slate-700 transition text-sm">
-                    LinkedIn Profile
+                <a href="https://www.linkedin.com/in/shalili-amira-90043b3a4" target="_blank" class="px-6 py-3 bg-slate-900 border border-slate-700 text-slate-200 font-semibold rounded-xl hover:bg-slate-800 transition text-sm flex items-center gap-2">
+                    <i class="fa-brands fa-linkedin"></i> LinkedIn
                 </a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="max-w-4xl mx-auto px-6 py-8 border-t border-slate-200 text-center text-sm text-slate-500">
-        <p>© <span id="current-year">2026</span> Nur Shalili Amira. Built with Tailwind CSS & Hosted on GitHub Pages.</p>
+    <footer class="max-w-5xl mx-auto px-6 py-8 border-t border-slate-900 text-center text-xs text-slate-500">
+        <p>© <span id="current-year">2026</span> Nur Shalili Amira. Hosted on GitHub Pages.</p>
     </footer>
 
-    <!-- Custom JS File -->
+    <!-- Custom JS Script -->
     <script src="script.js"></script>
 </body>
 </html>
